@@ -1,4 +1,5 @@
 import Card from './Card';
+import './Game.css';
 
 const Game = ({ randomCards, onCardClick }) => {
   return (
@@ -6,8 +7,8 @@ const Game = ({ randomCards, onCardClick }) => {
       {randomCards.map((card) => (
         <Card
           key={card.id}
-          color={card.color}
-          text={card.color}
+          img={card.img}
+          text={card.text}
           onCardClick={() => onCardClick(card.id)}
         />
       ))}

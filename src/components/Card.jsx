@@ -1,12 +1,10 @@
-const Card = ({ cardID, color, text, onCardClick }) => {
+const Card = ({ cardID, img, text, onCardClick }) => {
   return (
-    <div
-      className="card"
-      style={{ background: color, width: '100px', height: '100px' }}
-      data-id={cardID}
-      onClick={onCardClick}
-    >
-      {text}
+    <div className="card-wrapper" data-id={cardID} onClick={onCardClick}>
+      <div className="image-wrapper">
+        <img src={img} alt={text}></img>
+      </div>
+      <p>{text}</p>
     </div>
   );
 };

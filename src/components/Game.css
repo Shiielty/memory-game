@@ -1,0 +1,37 @@
+.game {
+  display: grid;
+  grid-template-columns: repeat(6, 130px);
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card-wrapper {
+  width: 130px;
+  cursor: pointer;
+}
+
+.card-wrapper:hover, .card-wrapper:active {
+  transform: scale(1.1);
+  color: pink;
+}
+
+.card-wrapper:hover > p {
+  text-decoration: underline;
+}
+
+.image-wrapper > img {
+  width: 100%;
+}
+
+.card-wrapper > p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1055px) {
+  .game {
+    grid-template-columns: repeat(auto-fill, 130px);
+    margin: 0 20px;
+  }
+}

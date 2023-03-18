@@ -1,15 +1,33 @@
 import { useState } from 'react';
-import Controller from './Controller';
+import Scoreboard from './Scoreboard';
 import Game from './Game';
+import Ruka from '../assets/icon_hbr_31a_kayamori.png';
+import Yuki from '../assets/icon_hbr_31a_izumi.png';
+import Megumi from '../assets/icon_hbr_31a_aikawa.png';
+import Tsukasa from '../assets/icon_hbr_31a_tojo.png';
+import Karen from '../assets/icon_hbr_31a_asakura.png';
+import Tama from '../assets/icon_hbr_31a_kunimi.png';
+import Aoi from '../assets/icon_hbr_31b_aoi.png';
+import Ichigo from '../assets/icon_hbr_31b_minasei.png';
+import Sumomo from '../assets/icon_hbr_31b_minases.png';
+import Higuchi from '../assets/icon_hbr_31b_higuchi.png';
+import Hiiragi from '../assets/icon_hbr_31b_hiiragi.png';
+import Byakko from '../assets/icon_hbr_31b_byakko.png';
 
 const Main = () => {
   const cards = [
-    { id: 0, color: 'red' },
-    { id: 1, color: 'green' },
-    { id: 2, color: 'blue' },
-    { id: 3, color: 'black' },
-    { id: 4, color: 'aqua' },
-    { id: 5, color: 'lightgreen' },
+    { id: 0, img: Ruka, text: 'Ruka Kayamori' },
+    { id: 1, img: Yuki, text: 'Yuki Izumi' },
+    { id: 2, img: Megumi, text: 'Megumi Aikawa' },
+    { id: 3, img: Tsukasa, text: 'Tsukasa Toujou' },
+    { id: 4, img: Karen, text: 'Karen Asakura' },
+    { id: 5, img: Tama, text: 'Tama Kunimi' },
+    { id: 6, img: Aoi, text: 'Erika Aoi' },
+    { id: 7, img: Ichigo, text: 'Ichigo Minase' },
+    { id: 8, img: Sumomo, text: 'Sumomo Minase' },
+    { id: 9, img: Higuchi, text: 'Seika Higuchi' },
+    { id: 10, img: Hiiragi, text: 'Kozue Hiiragi' },
+    { id: 11, img: Byakko, text: 'Byakko' },
   ];
 
   const maxScore = cards.length;
@@ -77,7 +95,7 @@ const Main = () => {
 
   return (
     <main>
-      <Controller
+      <Scoreboard
         score={score}
         bestScore={bestScore}
         onIncreaseScore={handleIncreaseScore}
