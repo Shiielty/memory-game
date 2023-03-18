@@ -40,7 +40,7 @@ npm ci
 npm run dev
 ```
 
-# Learning
+## Learning
 
 Through this project, I've learned how to use React Hooks and become better in managing state within my application. In this project, I've also learned how to create better reusable components and make the application become more scalable. With (almost) each components having it's own CSS, the project feels more managable compare it to the [previous project](https://github.com/Shiielty/cv-project).  
 Overall, I feel more confident using ReactJS and I look forward to continuing to improve my skills in future projects!
