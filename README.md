@@ -4,7 +4,13 @@
 
 [Check live preview here!](https://shiielty.github.io/memory-game/)
 
-Memory Card Game is a game to test player's memory. The rule is simple, player will be given several cards and player can't choose the same cards twice, that's it!
+Memory Card Game is a game to test player memory. The rule is simple: player will be given several cards and player can't choose the same cards twice, that's it!
+
+## Ingredient
+
+- React.js + Vite
+- CSS
+- [Heaven Burns Red Fankit](https://heaven-burns-red.com/fankit/)
 
 ## Get started
 
@@ -22,7 +28,7 @@ git clone https://github.com/Shiielty/memory-game.git
 cd memory-game
 ```
 
-3. Instal dependencies:
+3. Install dependencies:
 
 ```bash
 npm ci
@@ -34,10 +40,7 @@ npm ci
 npm run dev
 ```
 
----
+# Learning
 
-## Ingredient
-
-- React.js + Vite
-- CSS
-- [Heaven Burns Red Fankit](https://heaven-burns-red.com/fankit/)
+Through this project, I've learned how to use React Hooks and become better in managing state within my application. In this project, I've also learned how to create better reusable components and make the application become more scalable. With (almost) each components having it's own CSS, the project feels more managable compare it to the [previous project](https://github.com/Shiielty/cv-project).  
+Overall, I feel more confident using ReactJS and I look forward to continuing to improve my skills in future projects!
