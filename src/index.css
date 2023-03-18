@@ -17,3 +17,7 @@ footer {
   position: sticky;
   top: 100vh;
 }
+
+button {
+  font-family: 'Gugi', cursive;
+}

@@ -1,0 +1,50 @@
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-again {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.play-again button {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  font-size: 1.05rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play-again button:hover, .play-again button:active {
+  transform: scale(0.93);
+  font-weight: bold;
+  background-color: pink;
+  color: white
+}
+
+.play-again:active {
+  transform: scale(1.1)
+}
+
+.play-again img {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  border-radius: 100%;
+  animation: rotation 10s infinite linear;
+  z-index: -1;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

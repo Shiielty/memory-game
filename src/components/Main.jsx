@@ -13,6 +13,7 @@ import Sumomo from '../assets/icon_hbr_31b_minases.png';
 import Higuchi from '../assets/icon_hbr_31b_higuchi.png';
 import Hiiragi from '../assets/icon_hbr_31b_hiiragi.png';
 import Byakko from '../assets/icon_hbr_31b_byakko.png';
+import Gameover from './Gameover';
 
 const Main = () => {
   const cards = [
@@ -55,6 +56,12 @@ const Main = () => {
     setIsWin(true);
   }
 
+  function playAgain() {
+    setScore(0);
+    setIsClicked(initialState);
+    setIsWin(false);
+  }
+
   function cardStateToTrue(index) {
     const nextState = isClicked.map((val, i) => {
       if (i === index) {
@@ -90,7 +97,17 @@ const Main = () => {
   const randomCards = randomizeCards(cards);
 
   if (isWin) {
-    return <div>You reach the max score!</div>;
+    return (
+      <main>
+        <Scoreboard
+          score={score}
+          bestScore={bestScore}
+          onIncreaseScore={handleIncreaseScore}
+          onResetScore={handleResetScore}
+        />
+        <Gameover onPlayAgain={playAgain} />
+      </main>
+    );
   }
 
   return (
